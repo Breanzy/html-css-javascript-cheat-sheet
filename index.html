@@ -1,0 +1,566 @@
+
+<!-- Example of Application of Everything: -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title> Test website </title>
+        
+        <meta name="description" content="This is a test website to apply the usage of all HTML elements and attributes">
+        <meta name="keywords" content="test, elements, attributes, applications">
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="author" content="Sample Author">
+        <meta http-equiv="content-language" content="en-us">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+
+
+    <body>
+        
+        <div class= "main">
+            
+            <h1 ><a name= "main"> Test Website </a></h1>
+            <p>
+                Hello! This is a test website created by <b style="color: rgba(42, 100, 224, 0.753);">Breanzy</b>! The purpose of this website is to 
+                showcase every tags in html and css for reference and understanding of their applications.
+            </p>
+        </div>
+
+
+        <div class="content">
+        
+            <section>
+                <h2>Section 1: Webpage Links and Other Forms of Media </h2>
+                
+                <article>  
+                    <h3> This is Article 1 of Section 1.</h3>  
+        
+                    <p> Click this link to jump into Article 4. <a href="#Test 4">Test 4</a> </p>
+                </article>
+        
+                <br><br>
+
+                <article>
+                    <h3> This is Article 2 of Section 1.</h3>
+        
+                    <p> This is a link to a pog Youtube video <a href="https://www.youtube.com/watch?v=eIxVwE2AeJ0"> Pog Link</a>  </p>
+
+                </article>
+                
+                <br><br>
+
+                <article>
+                    <h3>This is Article 3 of Section 1.</h3>
+
+                    <p>This is an iframe link of a youtube video</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fOR-v8ghkRo" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="Youtube Video"></iframe>
+
+                    <br>
+
+                    <a href="https://www.youtube.com/embed/LcF2KUJVdLE" target="Youtube Video" emb>This replaces the iframe link to a new one</a>
+
+                </article>
+                
+                <br><br>
+        
+                <article>
+                    <h3> <a name="Test 4">This is Article 4 of Section 1.</a> </h3>
+            
+                    <p> This is an image source from Facebook. Try to hover over it. </p>
+                    <p> <img src="https://www.dictionary.com/e/wp-content/uploads/2021/01/20201215_atw_unsult_800x800-copy20201215_atw_-292x300.png" width="35%" height="35%" title="Meme" class="image"> </p>
+
+                    <p> This is a non-existent image source. Try to hover over it. </p>
+                    <p> <img src="https://www.dictionary.com/e/wp-content/uploads/2021/01/20201215_atw_unsult_800x800-copy20201215_atc_-292x300.png" width="35%" height="35%" title="Meme" alt="Broken Meme" class="image"> </p>
+        
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3> This is Article 5 of Section 1.</h3>
+
+                    <p>This is a local audio clip. To showcase all features and avoid repitition, 
+                        It contains all modifiers (looped and automatically starts in startup)</p>
+                    <audio controls src="Test.mp3" loop></audio>
+                    <!-- autoplay       <== put this if you want autoplay -->
+
+                </article>
+                
+                <br><br>
+
+                <article>
+                    <h3> This is Article 6 of Section 1.</h3>
+
+                    <p>This is a local video clip. </p>
+                    <video src="Pappi uwu.m4v" width="15%" height="15%" controls></video>
+                </article>
+
+            </section>
+            
+            <br><br><br>
+            
+            <section>
+                <h2>Section 2: Text Manipulations</h2>
+
+                <article>
+                    <h3>This is Article 1 of Section 2</h3>
+
+                    <p title="Ayee">Hover over this text to see another text.</p>
+
+                    <p> 
+                        <span>This text is inside a paragraph element and also inside a span element. Due to the style of the span, 
+                        it is colored blue and in white background.</span> 
+                        This text is still inside the same paragraph element, but now outside the span element. 
+                     </p>
+
+                    <p> These are Escape characters: &nbsp; &#8482; &amp; &copy; &lt; &gt; &#63; </p>
+
+                    <p> 
+                        These are <b>Bold</b>, <strong>Strong</strong>, <u>Underlined</u>, <s>Crossed</s>, <i>Italic</i>, and <em>Em</em> texts 
+                        caused by special font elements "<'b><'/b>, <'strong><'/strong>", etc.
+                    </p>
+
+
+                    <p>This is a <sub>subtext</sub> and a <sup>supertext</sup> using <'sub> and <'sup> elements</p>
+
+                    <p id="textshadow">This is a textshadow</p>
+
+
+
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>This is Article 2 of Section 2</h3>
+
+                    <h4>
+                        This is an Unordered List. Lists typically are set as block  display. Notice the different marker styles. First
+                        item on the list is the default marker
+                    </h4>
+                    <ul>
+                        <li>List 1</li>
+                        <li style="list-style: circle;">List 2</li>
+                        <li style="list-style: square;">List 3</li>
+                        <li style="list-style: none;">List 3</li>
+                    </ul>
+
+                    <h4>This is an Ordered List. Notice how unlike unordered, it counts the list in sequence</h4>
+                    <ol>
+                        <li>List 1</li>
+                        <li style="list-style:lower-latin;">List 2</li>
+                        <li style="list-style: lower-roman;">List 3</li>
+                        <li style="list-style:lower-greek;">List 3</li>
+                    </ol>
+
+                    <h4>This is an Unordered List, but its list has inline display meaning it is now horizontal, list content is a clickable 
+                        link with borders, and colored red-ish and no underline. Notice how it no longer has any markers. Inlined lists have no markers.
+                    </h4>
+
+                    <ul id="listUL">
+                        <li><a href="#testUL" name="testUL">Test Buttons</a></li>
+                        <li><a href="#testUL" name="testUL">Home</a></li>
+                        <li><a href="#testUL" name="testUL">About</a></li>
+
+                    </ul>
+
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>This is Article 3 of Section 2</h3>
+
+                    <h4>This is a Table by using the table element.</h4>
+                    <table>
+            
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    
+                        <tr>
+                            <td>Content in Row 1 Column 1</td>
+                            <td>Content in Row 1 Column 2</td>
+                            <td>Content in Row 1 Column 3</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Content in Row 2 Column 1</td>
+                            <td>Content in Row 2 Column 2</td>
+                            <td>Content in Row 2 Column 3</td>
+                        </tr>
+                    
+                    </table>
+
+                    <br><br>
+
+                    <h4>
+                        This is another Table by using table-row and table-cell style attribute in div and its content, respecitvely.
+                        Notice the gradient background color tho. This is done using linear-gradient attribute.
+                    </h4>
+
+                    <div>
+                        <div class="tableRow">
+                            <div class="tableCell">hello</div>
+                            <div class="tableCell">hello</div>
+                            <div class="tableCell">hello</div>
+                        </div>
+
+                        <div class="tableRow">
+                            <div class="tableCell">hello</div>
+                            <div class="tableCell">hello</div>
+                            <div class="tableCell">hello</div>
+                        </div>                        
+                    </div>
+
+                </article>
+
+                <br><br>
+
+                <article>
+
+                    <h3>This is Article 4 of Section 2</h3>
+
+                    <h4>This is a paragraph element with Pseudo Elements</h4>
+                    
+                    <p id="pseudo">
+                        As you can see, this paragraph element has a border, making it clear where
+                        the entire element is located. Notice the small red square on the top left of the box. That is
+                        caused by the "pseudo::before" element. As you can see, the red square is INSIDE the border, meaning
+                        that the red square is not "on top" of the paragraph element, but rather it is inside the paragraph
+                        element after all. When you hover over this entire box, you'll notice the text turns green. That
+                        is caused by the "pseudo:hover" element. Furthermore, you'll notice that a new text colored yellow will
+                        also appear as you hover over. This is caused by the "pseudo:hover::after" element.
+                    </p>
+                    
+                </article>
+
+            </section>
+                
+            <br><br><br>
+
+            <section>
+                <h2>Section 3: User Inputs</h2>
+
+                <article>
+                    <h3>This is Article 1 of Section 3</h3>
+
+                    <h4>This is a Single-Line Textbox Form. Notice that it is stacked horizontally. That is because input elements are inline</h4>
+
+                    <form action="">
+                        <label for="label1">Single-Line Textbox</label>
+                        <input type="text" id="label1">
+
+                        <label for="label1">Another Single-Line Textbox</label>
+                        <input type="text" id="label1">
+                    </form>
+
+                    <br>
+
+                    <h4>This is a Multiple-Line Textbox Form</h4>
+
+                    <form action="">
+                        Multiple-Line Textbox <br>
+                        <textarea cols="8" rows="3"></textarea>
+                        <input type="submit" value="Sumbit">
+                        
+                        <textarea cols="8" rows="3"></textarea>
+                        <input type="submit" value="Sumbit">
+                    </form>
+
+                </article>
+
+                <br><br>
+                
+                <article>
+                    <h3>This is Article 2 of Section 3</h3>
+
+                    <h4>This is a Radio Button Form. Notice that it is no longer inline. That is simply because there's a break element between elements</h4>
+
+                    <form action="">
+                        Radio button choice 1.
+                        <input type="radio" name="radio1">
+
+                        <br>
+
+                        Radio button choice 2.
+                        <input type="radio" name="radio1">
+                    </form>
+
+                    <br>
+
+                    <h4>This is a Checkbox Form</h4>
+
+                    <form action="">
+                        <input type="checkbox" checked="checked"> Checkbox 1 (This one is automatically checked).
+
+                        <br>
+
+                        <input type="checkbox"> Checkbox 2.
+
+                        <br>
+                        
+                        <input type="checkbox"> Checkbox 3.
+
+                    </form>
+
+                    <br>
+
+                    <h4>This is a Number Box Form</h4>
+
+                    <form action=""> This number box can contain any number: <input type="number"> </form>
+                    <br>
+                    <form action=""> This number box can only contain numbers between 1 and 10: <input type="number" min="1" max="10"> </form>
+
+                    
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>This is Article 2 of Section 3</h3>
+
+                    <h4>This is a Drop-down List Form</h4>
+
+                    <form>
+                        <select>
+                            <option value=""> Option 1</option>
+                            <option value=""> Option 2</option>
+                            <option value=""> Option 3</option>
+                        </select>
+
+                    </form>
+
+                    <br>
+
+                    <h4>This is a Date Box Form</h4>
+
+                    <form>
+                        <input type="date">
+                    </form>
+                    
+                </article>  
+
+            </section>
+
+                <br><br><br>
+
+            <section>
+                <h2>Section 4: Layout</h2>
+
+                <article>
+                    <h3> This is Article 1 of Section 4</h3>
+
+                    <h4>These are the different layers of "boxes".</h4>
+
+                    <p id="boxes-example">
+                        The area where this text is at is the <b style="color:rgb(42, 100, 224)">Content box</b>.
+                        The spacing between this text and the white border is the <b style="color:rgb(42, 224, 112)">Padding box</b>.
+                        The border itself is also called the <b style="color:rgb(42, 181, 224)">Border box</b>
+                        The spacing between the whole box and the article itself is the <b style="color:rgb(224, 42, 57)">Margin box</b>. 
+                        Notice the exaggerated spacing of the <b style="color:rgb(42, 224, 112)">Right Padding</b> and the 
+                        <b style="color:rgb(224, 42, 57)">Left Margin</b>.
+                    </p>
+
+                    <br>
+
+                    <h4>These are the different forms of border</h4>
+
+                    <p id="border-example">
+                        This text is surrounded by four essential types of borders. The left is solid, top is dashed, right is doubled,
+                        and the bottom is dotted. There is also a fifth one, transparent, but it just makes the border invisible. Notice the
+                        <b style="color:rgb(42, 181, 224)">Round Borders</b>, instead of edged ones, and that the the left border 
+                        has a different color.
+                    </p>
+
+                    <br>
+
+                    <h4>This is a background Image</h4>
+                    
+                    <p id="background-image-example">
+                        Look how cool (and albeit cringy) this background is my guy
+                    </p>
+
+                    <br>
+
+                    <h4>This is a fieldset element</h4>
+                    <fieldset>
+                        <legend>Fieldset element title (or Legend)</legend>
+
+                        <p>
+                            Fieldset elements are like any other placeholder element (e.g. div, article, section), but it has a default 
+                            border like what you're seeing,
+                            and a title or "Legend" at the top left of its borders.
+                            
+                        </p>
+                    </fieldset>
+
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>This is Article 2 of Section 4 </h3>
+
+                    <h4>These are images, stacked together horizontally with their standard inline properties.</h4>
+                    <img src="1.png" class="image">
+                    <img src="2.png" class="image">
+
+                    <h4>These are images, stacked together vertically with block property using a display element. Notice the lack of borders </h4>
+                    <img src="1.png" class="image" id="block">
+                    <img src="2.png" class="image" id="block">
+
+                    <img src="1.png" class="image" id="float">
+                    <h4>
+                        The red box on the right is floated or "pinned" to the right. This
+                        means that any other elements that go after rendering this floated element will first occupy the left side
+                        of the image until it bleeds out of the image.
+                    </h4>
+
+                    <img src="3.png" class="image" id="absolute">
+
+                    <h4>
+                        The green box is an element with
+                        an absolute position attribute. Notice that it is transparent. It adjusts its position according to its adjacent 
+                        NON-STATIC element. So far, all of the elements before this element are all elements with static positions. So,
+                        its position can be assigned to anywhere within the website. But, this element's position is only assigned to move 
+                        430 pixels horizontally from the right, so its vertical position is simply located below the preceeding element by default.
+                        Also notice how this text is now bleeding out of the red box, occupying the free space below it.
+                    </h4>
+
+                    <br>
+
+                    <div id="fixed">
+                        <h5><a href="#main">Back to Top</a> </h5>
+                    </div>
+
+                    <br><br>
+
+                    <h4>
+                        In souce code, this spot is where the div for the "Back to Top" icon on the left of the page.
+                        That div is an element with a fixed position attribute. It is permanently fixed in the position of the browser 
+                        screen, even if you scroll up or down. Notice how it is transparent but turns into a solid form
+                    </h4>
+
+                    <br><br>
+
+                    <img src="1.png" class="image">
+                    <img src="2.png" class="image" id="relative">
+
+                    <h4 style="position: relative;">
+
+                        <img src="3.png" class="image" id="absolute">
+
+                        The red box is a normal "static" positioned element. This text, as well as the blue box, is an element with relative
+                        position. Notice how it is similar to absolute positioned elements, it overlaps with other elements. Red box
+                        is overlapped, and blue box is overlapped with this text because this text i placed after it.
+                        The green box here is the same absolute positioned box from last time with the same properties. Notice however, that this
+                        green box's horizontal position is different from the previous one. It's because this green box is inside this
+                        text element, and since this text element is in relative position, it assigns horizontal position according to
+                        this text box, instead of the whole site. I hope to god that made sense
+
+                    </h4>
+
+                    <br><br>
+
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>Article 3 of Section 4</h3>
+
+                    <h4>This is a text with overflow:scrollbar attribute.</h4>
+                    <p id="overflow-1"> 
+                        Usually, what happens when wiriting text is that it will occupy the left-to-right spaces of whatever element it is
+                        contained. However, when a text is specified to have restrained height and length, it will follow this 
+                        specification instead. This causes some text to "overflow" when the text-specified conditions are larger than
+                        the element it is in. This particular element, however, is specified to only consume the a small portion of height
+                        of the element. Due to the text requiring more space than that, it will still try to continue the text vertically, 
+                        which would create an overflow. In order to prevent this, there is an element called, well, ..overflow.
+                        One attribute for overflow is to simply create a scrollbar like the one you're seeing in this textbox,
+                        while the other is to simply hide and cut whaever text that overflowed, like the one you're seeing on the bottom
+                        part of this text.
+                    </p>
+
+                    <br>
+
+                    <h4>This is a text with overflow:hidden attribute. (WARNING: Based word)</h4>
+                    <p id="overflow-2">
+                        nigge(sike I won't do that my g) r
+                    </p>
+
+                </article>
+
+            </section>
+
+            <br><br><br>
+
+            <section>
+                <h2>Section 5: Miscellenaious</h2>
+
+                <article>
+                    <h3> This is Article 2 of Section 4 </h3>
+
+                    <h4>Try hovering your cursor over these boxes. These elements have the cursor property with varied properties.</h4>
+
+                    <h6>These are cursors with distinctive properties</h6>
+                    <span id="sample-boxes" style="cursor: default;">default</span>
+                    <span id="sample-boxes" style="cursor: crosshair;">crosshair</span>
+                    <span id="sample-boxes" style="cursor: pointer;">pointer</span>
+                    <span id="sample-boxes" style="cursor: move;">move</span>
+                    <span id="sample-boxes" style="cursor: text;">text</span>
+                    <span id="sample-boxes" style="cursor: help;">help</span>
+                    <span id="sample-boxes" style="cursor: no-drop;">no-drop</span>
+                    <span id="sample-boxes" style="cursor: alias;">alias</span>
+                    <span id="sample-boxes" style="cursor: progress;">progress</span>
+                    <span id="sample-boxes" style="cursor: wait;">wait</span>
+                    <span id="sample-boxes" style="cursor: grab;">grab</span>
+                    <span id="sample-boxes" style="cursor: grabbing;">grabbing</span>
+                    <span id="sample-boxes" style="cursor: copy;">copy</span>
+                    <span id="sample-boxes" style="cursor: cell;">cell</span>
+                    <span id="sample-boxes" style="cursor: none;">none</span>
+
+
+                    <h6>I have no idea what the fuck these are. They all just look like text cursors (????)</h6>
+                    <span id="sample-boxes" style="cursor: inherit;">inherit</span>
+                    <span id="sample-boxes" style="cursor: auto;">auto</span>
+                    <span id="sample-boxes" style="cursor: URL;">URL</span>
+                    <span id="sample-boxes" style="cursor: hand;">hand</span>
+
+                    <h6> POGCHAMP CURSOR POGCHAMP CURSOR POGCHAMP CURSOR POGCHAMP CURSOR POGCHAMP CURSOR POGCHAMP CURSOR </h6>
+                    <span id="special-sample-box">pog</span>
+
+                </article>
+
+                <br><br>
+
+                <article>
+                    <h3>This is Article 3 of Section 4</h3>
+
+                    <h3>
+                        These two words are contained inside different divs, each having different id tags. However, their id's in css are both
+                        defined together, and therefore, they still have the same styling.
+                    </h3>
+
+                    <div id="sameStyle1">Hello</div>
+                    <div id="sameStyle2">W0rlD</div>
+                </article>
+
+                <p id="aye">balls</p>
+
+            </section>
+
+    </body>
+
+</html>

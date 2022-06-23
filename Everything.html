@@ -1,0 +1,728 @@
+
+<!-- HTML Codes: -->
+
+<!-- 
+
+    Standard HTML Format:
+
+    <Element>
+        <Element (parameter="value")>
+            content
+        </Element>
+    </Element>
+
+-->
+
+
+<!DOCTYPE html> 
+<!-- This is for defining the html as a file that uses the updated version of html 
+(also btw this is how you comment in html) -->
+
+<html> </html> 
+<!-- Literally everything you see in your html file -->
+
+<head></head> 
+<!-- Contains data in html that does not show up the web page itself (title of website, author, etc.) -->
+
+<body></body>
+<!-- Contains data that shows everything in the web page -->
+
+<!-- Try !!! - It automatically creates a template workflow -->
+
+
+
+
+<!--=========================================== Things to use in body: ========================================================-->
+
+
+<!-- Element Placeholders -->
+
+<div></div>
+<!-- Creates a "division" or section panel that is basically where you put every other elements in -->
+
+<article></article> 
+<!-- Creates a sub division or "article" panels that contains independent information -->
+
+<section></section> 
+<!-- Creates a section panel for grouping individual elements with similar information or attributes -->
+
+<!--
+     NOTE: General rule of thumb for these three elements - Basically all these three has the same function and literally looks the same
+     with each other. But there are nuances to consider in using each one of them. Keep in mind, however, that these are just
+     common practices with "some" degree of practicality, but really, you can just use only one of these three in an entire website 
+     and it still works fine.
+
+     Articles are individual information about "something". For instance, an entry of a show product in an online store contains
+     information about that product alone. All that information can be inside an article.
+
+     Sections are used to group articles with common attributes, traits or whatever. Say for instance there are now multiple
+     articles of gucci, lebrons, umm crocs, and fila shoes in the online store. All of those articles can then be group into a single
+     section of Shoes.
+
+     Divs are basically the OG placeholder of elements. That's really all it does.
+
+     Articles and Sections have "some" degree of practicality because search engines MAY prioritize looking for these in websites. But who
+     fucking knows maybe it doesn't actually. In any case, again, try to keep this information as just a rule of thumb rather than
+     a necessity.
+-->
+
+<fieldset></fieldset>
+<!-- A placeholder element with a default border and a title on top of its border -->
+    <!-- fieldset-exlusive elements: -->
+    <legend></legend>
+    <!-- The title of the fieldset that will show up on top of the border -->
+
+<span></span>
+<!-- A special placeholder element that has no margin, padding, or border by default  -->
+<!-- NOTE: Unlike most placeholder elements, this element has an INLINE DISPLAY property. Search for the word "inline" below for more info. -->
+<!-- NOTE: spans (or all inline elements) can only have margins HORIZONTALLY. That means, top and bottom margin for span is non-existent -->
+
+
+
+
+<!-- Essentials -->
+
+<h1></h1>  <h2></h2>  <h3></h3>  <h4></h4>  <h5></h5>  <h6></h6> 
+<!-- 
+    "headers" are the title texts. They are the bolded down text and they add context to what your content is about.
+    Headers come with multiple numbers, h1 being the most important header, while h6 as the least important header
+-->
+<!-- NOTE: You really only need a single <h1> element for every website. Treat H1 as the de facto title of a website itself -->
+
+<br>
+<!-- Breaks line, adding a new line like \n -->
+
+<p title="" class=""></p> 
+<!-- The content or "paragraph" text itself in the website. -->
+    <!-- p Attributes: -->
+        <!-- title adds a title in the text, so when you hover over it, another text shows up -->
+        <!-- class tags an element with a name to be able to group it with other elements of the same tag -->
+            <!-- NOTE: You can add multiple classes to any element by specifying all the different classes, seperated by spaces -->
+                <!-- Example: class="blue bold big" adds blue, bold, and big classes into an element. -->
+
+    
+
+<!-- Text Modifiers -->
+&nbsp;
+<!--This is a Text Input. It adds space. You can't add multiple spaces so you need this is you want to space a lot.-->
+
+&#8482;
+<!-- Creates a TM symbol -->
+
+&amp;
+<!-- Creates & -->
+
+&copy;
+<!-- Creates Copyright symbol -->
+
+&lt;
+<!-- Creates < -->
+
+&gt;
+<!-- Creates > -->
+
+&#63;
+<!-- Creates ? -->
+
+<b></b>
+<!-- Creates a bold text -->
+
+<strong></strong>
+<!-- Creates a strong text (almost the same output as bold but adds emphasis for text-to-speech programs) -->
+
+<u></u>
+<!-- Creates an underlined text -->
+
+<s></s>
+<!-- Creates a crossed text -->
+
+<i></i>
+<!-- Creates an italic text -->
+
+<em></em>
+<!-- Creates an em text (same case as strong element, but for italic) -->
+
+<sup></sup>
+<!-- Creates a supertext element -->
+
+<sub></sub>
+<!-- Creates a subtext element -->
+
+
+
+
+<!--Hyperlinks-->
+<a href=""  href="#" name="" target=""></a>
+<!--Anchor Element. It adds hypertext links-->
+
+    <!--a Attributes: -->
+    <!-- href creates Text that contains web link OUTSIDE the current webpage -->
+    <!-- href="#" creates Text that contains web link INSIDE the current webpage (The diff is with the #) -->
+    <!-- name creates a name that corresponds to the anchor tag with #. -->
+    <!-- target points the name to where the html link would be directed to. Without target, by default, html links are redirected to a new tab-->
+
+<iframe src="" frameborder="" width="" height="" name=""></iframe>
+<!-- iframe Element. This is for creating a physical representation of another website -->
+
+    <!-- iframe Attributes: -->
+        <!-- frameborder is a boolean that when enabled (="1"), creates a border around the iframe -->
+        <!-- src is the address of the website you want to place -->
+
+
+
+
+<!--Pictures-->
+<img src="" width="" height="" title="" alt="">
+<!--Adds images with the name of the picture as input.-->
+<!--Make sure you put the pic within the same folder of the html file so you don't have to specify the directory of the pic.-->
+    <!-- img Attributes: -->
+        <!-- src is the name of the pic you want to place -->
+        <!-- width and height is the dimensions of the pic -->
+        <!-- title lets you create a text that shows up when you hover over the image -->
+        <!-- alt creates a text that shows up when the image from the src does not exist. -->
+
+<!-- Audio -->
+<audio controls src="" autoplay loop draggable=""></audio>
+<!-- Adds an audio clip with an audio player -->
+    <!-- audio Attributes: -->
+        <!-- controls is needed to create the audio player itself. Always put it there -->
+        <!-- src is the name of the audio source. -->
+        <!-- autoplay enables the audio to automatically play upon startup of the website -->
+        <!-- loop ....loops the audio. -->
+        <!-- draggable can either be true or false, and enables the audio player to be draggable -->
+
+<!-- Video -->
+<video controls src="" autoplay loop draggable="" width="" height=""></video>
+<!-- Adds a video clip with a video player -->
+    <!-- video Attributes: -->
+        <!-- Everything here is the same with audio, except width and height, which is also mentioned on previous elements. -->
+
+
+
+
+<!--Bullets: -->
+<ul></ul>
+<!--Adds an order of lists in bullet form-->
+
+<ol></ol>
+<!--Adds an order of lists in number form-->
+
+<li></li>
+<!--Adds the lists-->
+
+
+<!--Tables: -->
+<table></table>
+<!--Creates a table-->
+
+<tr></tr>
+<!--Creates a row of the table-->
+
+<th></th>
+<!--Creates a column of the table-->
+
+<td></td>
+<!--Creates a body of the table-->
+
+
+
+
+<!-- User Inputs -->
+<form action=""></form>
+<!-- Element that is used to collect information -->
+<!-- Note: EVERYTHING IN USER INPUTS SHOULD BE INSIDE A FORM -->
+    <!-- form Attributes: -->
+
+<input type="" size="" id="" value="" name=""      checked=""     min="" max="">
+<!-- Element that creates a a user inupt functionality -->
+    <!-- input Attributes: -->
+        <!-- type deifines what kind of user input functionality is created -->
+            <!-- type="text" creates a single-line text box -->
+            <!-- type="submit" creates a submit box to send the inputs given -->
+            <!-- type="date" creates a date box for like a calendar or something -->
+
+            <!-- type="number" creates a text box that only accepts number inputs-->
+                <!-- min="" & max="" EXLUSIVE for number, creates a  range for the minimum and maximum input of number possible-->
+
+            <!-- type="checkbox" creates a checkbox with multiple choice -->
+                <!-- checked="" EXLUSIVE for checkbox, automatically checks the checkbox upon startup -->
+
+            <!-- type="radio" creates a checkbox with only one choice (eg. yes or no buttons) -->
+                <!-- NOTE: make sure the radio buttons have the same Name attribute with other radio buttons, otherwise it won't work -->
+            
+        <!-- size resizes things no shit there -->
+        <!-- id creates an Id tag to pair it together with a Label element -->
+        <!-- value creates a text inside the created input type (sort of like a name or label of the input type) -->
+        <!-- name creates a name for the input -->
+
+<select name="" id=""></select>
+<!-- Creates a drop-down list box -->
+
+<option value=""></option>
+<!-- EXLUSIVE for select, creates options to choose from in the drop down list -->
+
+<label for=""></label>
+<!-- Creates a label text that can be paired together with Input element -->
+    <!-- label Attributes: -->
+        <!-- for creates an Id tag to pair together with other Id tags that have the same name -->
+    
+<textarea cols="" rows=""></textarea>
+<!-- Creates a multiple-lined text box -->
+    <!-- textarea Attributes: -->
+        <!-- rows and cols defines the size of the textbox in columns and rows, respectively -->
+
+
+
+<!--=========================================== Things to use in head: ========================================================-->
+
+<title></title>
+<!--The title of the website that you see in browser-->
+
+<!-- Meta -->
+<meta name="" http-equiv="" content="">
+<!-- The element that creates additional information about the webpage in search engines -->
+    <!-- meta Attributes: -->
+        <!-- content is where you put the content insite meta (the description, content, name, etc.) -->
+
+        <!-- name defines the type of meta value you are defining -->
+            <!-- name="description" creates a desription for your website when you search it in search engines -->
+            <!-- name="keywords" creates the main keywords for the search engine to detect your website -->
+                <!-- NOTE: you put multiple words in content="" for multiple keywords-->
+                    <!-- 
+                        Examples: 
+
+                        <meta name="description">   -alone will NOT specify any description
+
+                        <meta name="keywords">  -alone will NOT specify any keywords
+                        <meta name="keywords" content="keyword 1">  -gives the website a keyword of "keyword 1"
+                        <meta name="keywords" content="keyword 1, keyword 2, keyword 3"> -gives the website multiple keywords
+                    -->
+
+        <!-- http-equiv idk it has the same functionality with name but with different attributes and functionalities for some reason (???) -->
+            <!-- http-equiv="author" creates a descritption of who the author of the website is -->
+            <!-- http-equiv="content-language" creates a description of what language the website is using (Avoid this element)-->
+                    <!-- NOTE: same principles from meta, you also need content for things to work -->
+                    <!-- 
+                        Examples:
+
+                        <meta http-equv="author">   -alone will NOT specify any author
+                        <meta http-equiv="content-language" content="en-us, ph"  will specify multiple languages in the header,
+                        HOWEVER, this is bad practice. instead, use CSS Modifier:
+
+                        lang="en-us, ph"
+
+                        and put it somewhere as a description to the desired element.
+                     -->
+
+
+
+
+
+
+<!-- CSS-related elements: -->
+
+<style></style>
+<!-- Modifies the style of elements (needed if stylesheet is created within the html code) -->
+    <!-- NOTE: why even style in the HTML file my guy, that's cringe. Try to avoid this practice as much as possible. -->
+
+<!-- 
+    NOTE: you can also define an element's style by directly adding it in its attribute! 
+
+    Example:
+    <div style="color: blue;"> </div>
+
+    ALL ELEMENTS in HTML have this attribute, so it can be applied to any of them, but do note, however, that this is usually 
+    inefficient and should be used only in a sort of last-resort desperation.
+
+-->
+
+<link rel="" href="">
+<!-- Creates a link to an external style sheet (if you created the stylesheet outside the html code) -->
+    <!-- NOTE: you place this element to  -->
+    <!-- Link Attributes: -->
+        <!-- rel mentions what kind of file the link is (just put stylesheet all the time) -->
+        <!-- href is the name of the external style sheet you created. This is to have a reference of the css file this html file will use -->
+
+
+
+
+<!-- 
+
+CCS 101: FRAMEWORK FOR EVERY MODIFIERS
+----------------------------
+
+(element) [generic element] OR (element).(class) [generic element WITH the specified class] OR .(class) [any element with the the specified class] 
+OR (element), (element) [multple generic elements] OR #(id) [any BUT ONLY ONE element with the specified id]
+{
+    Modifier: (attribute) OR (attribute) (attribute) (attribute)...
+}
+
+ALL STYLE MODIFIERS YOU CREATE MUST BE INSIDE ONE OF THESE FRAMEWORKS 
+
+Example: 
+    color: red   alone is wrong. 
+    
+    You need: 
+    .test-class
+    {
+        color: red
+    }   
+
+
+
+BASIC SELECTOR FORMATS
+----------------------------
+
+element{} 
+      
+    These represent all the default elements that HTML provides. Using this an element for css would mean
+    that you would inherit its styling.
+
+.element{} 
+      
+    Notice the dot at the beginning. This represent the CLASS that the user created. Using this as an element for
+    CSS would mean that any elements with this particular class name would inherit its styling. You can add classes
+    to multiple other elements, and they will also inherit the same style.
+            
+        Example:
+            <p class="test-class"></p> : p element is tagged with "test-class":
+            <body class="test-class"></body> : body is also tagged with the same class and is modified with:
+            
+            .test-class
+            {
+                color: red;
+            }  
+
+#element{} 
+
+    Notice the hash at the beginning. This represent the id that the user created. Same functionality as classes, but
+    the rule of thumb is that you only use ids for SPECIFIC elements that require it, as ID tags can only be used with ONE element only.
+
+        Example:
+            <p id="test-class"></p> : P element is tagged with "test-id" and will be modified with:
+
+            #test-class
+            {
+                color: red;
+            }
+
+            YOU CANNOT ASSIGN ANY OTHER ELEMENTS WITH THIS ID THEREAFTER. I mean, technically, you still can. Your website will still apply the
+            styles of the elements with same ids, but, just consider it as a must do coding etiquette, because it really might screw some things up.
+
+
+element :: (pseudo class) {} 
+    
+    This is called a pseudo class. This acts as an extention for the current styling of the particular element specified. This allows multiple
+    stylings in an element in various situations. You don't have to classify an element with classes or id for stylings within this element
+    to be inherited. The second "(pseudo class)" after element ":" is a parameter that indicates when the stylings are to be in effect.
+
+-->
+
+<!-- 
+    NOTE: You can use a double OR single semicolon. Double is the updated (and cooler looking) look & standard, but either of which works 
+    HOWEVER, it is good practice to only use :: for before and after, and : for everything else.
+-->
+
+<!--
+    Pesudo Classes:
+
+    : hover         - activates the styling of an element when a cursor is directly hovering within the element
+    :: before       - does something BEFORE the element
+    :: after        - does something AFTER the element
+    
+    :hover :: after - combo class that activates a styling after an element while a cursor is hovering it.
+
+
+    Useless ish pesudo classes:
+
+    ::first-letter  - Just edits the first letter of the text element
+    :first-line     - Just edits the first line of the text element
+
+    NOTE: You can only make one :: before and ::after pseudo class. You can't have ::after & :hover::after as well. Pick your poison.
+ -->
+
+
+ <!-- 
+
+    Selectors: Extended Version.
+
+    h1 {}                       <=      Type Selector. Modifies the element with the same name
+
+    #test {}                    <=      ID Selector. Modifies the element with the same ID name 
+    
+    .test {}                    <=      Class Selector. Modifies the element with the same class name
+
+    h1, h2, #test, .test {}     <=      Combined Selector. Allows multiple Selector modifications
+
+    div p {}                    <=      Descendant Selector. In this example, it only modifies all element p that is inside the element div.
+    
+    h1 .test {}                 <=      Another Descendant Selector. In this example, it only modifies all h1 elements with a test class.
+
+    * {}                        <=      ALL Selector. Modifies literally every element in the website
+
+    :not(h1) {}                 <=      NOT Selector. Modifies every element in the website EXCEPT the element mentioned (h1)
+
+    div > p {}                  <=      Child Selector. Modifies its DIRECT CHILD only. For example:
+                                        
+                                        <div>
+                                            <p>
+                                                Hello           <=  In this code, p is direct child of div, so Hello is modified
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <article>
+                                                Sup
+                                                <p>
+                                                    Hello       <= In this code, p is direct child of article. Article, however, is he child of div,
+                                                </p>               So article is modified instead, and Sup is modified
+                                            </article>
+                                        </div>
+
+
+
+ -->
+        
+
+
+<!-- Content Modifiers: -->
+
+color: (attribute)
+<!-- Changes text color -->
+    <!-- color Attributes: -->
+        <!-- rgba(0, 0, 0, 0) is RBGA color (red, green, blue, alpa), and alpha means how much transparency the color is -->
+        <!-- #123456 is Hex color. Every 2 digits in hex represent R, G, and B respectively. It's fucky wucky, I know. -->
+        <!-- red green royalblue are preset colors. You simply type the name of the colors, simple. -->
+
+font: ((bold italic), (font size), font style);
+<!-- General font style -->
+    <!-- font Attributes: -->
+        <!-- bold, italic - Changes font format -->
+        <!-- px % em auto - Changes font size -->
+        <!-- font style - Changes font style -->
+
+font-size: (attribute);
+<!-- Changes font size -->
+    <!-- font-size Attriutes: -->
+        <!-- px - Can change size of font by pixel size -->
+        <!-- % - Can change size of font by percentage relative to default the text's px size -->
+        <!-- em - Same functionality with percentage but as a multiplier format instead of percentage -->
+        <!-- auto - Automatically splits the spaces evenly -->
+
+font-family: (attribute);
+<!-- Changes font format -->
+    <!-- font-family Attributes: -->
+        <!-- Arial, Sans -->
+
+font-style: (attribute);
+<!-- Changes font Attributes -->
+    <!-- font-style values: -->
+        <!-- italic, bold -->
+
+font-weight: (attribute)
+<!-- Changes font weight -->
+    <!-- font-weight Attributes: -->
+         <!-- px, en, and % (definitions already covered in previous notes) -->
+
+text-shadow: ((horizontal) (vertical) (blurriness) (color)) , (stack another text shadow);
+<!-- Adds shadow to text -->
+    <!-- text-shadow Attributes: -->   
+        <!-- horizontal and vertical: px, en, % - to add offset of shadow's position relative to text's position -->
+        <!-- blurriness: px, en, % - to add blurriness to the shadow. the higher the number, the blurrier it gets -->
+        <!-- color - changes color of the shadow -->
+        <!-- NOTE: you can stack multiple shadows in a single text-shadow definition by putting a comma and writing another text-shadow attribute set -->
+
+text-decoration: (attribute);
+<!-- Creates a text-decoration with functionalities that can replace multiple text-modifiers -->
+    <!-- text-decoration Attributes: -->
+        <!-- underline - creates an underline lmaooOO -->
+        <!-- line-through - creates crossed line -->
+        <!-- overline - creates ...an overline -->
+        <!-- none - no decorations -->
+
+text-align: (attribute);
+<!-- Aligns the text accordingly with the given attribute -->
+    <!-- text-align Attributes: -->
+        <!-- center, right, and left aligns the text in the page in the center, right, and left, respectively -->
+
+line-height: (attribute);
+<!-- Creates spacing for the text -->
+    <!-- line-height Attributes: -->
+        <!-- px, en, and % (definitions covered in previous notes) -->
+
+background: (attribute)
+<!-- Creates a background. This is similar to backgroun-color in function, but you can do a lot of things here -->
+    <!-- background Attributes: -->
+        <!-- rgba, hex, preset color (definitions already covered in previous notes) -->
+        <!-- linear-gradient( (to right, left, top, bottom, (NUMBER)deg) color, color) -->
+            <!-- creates a gradient blend of colors, from left to right, top to bottom, or by degree, depending on what is specified -->
+
+background-color: (attribute)
+<!-- Creates background color for the content box -->
+    <!-- background-color Attributes: -->
+    :not(h1) {}
+    <!-- rgba, hex, preset color (definitions already covered in previous notes) -->
+
+background-image: (attribute)
+<!-- Creates a background image instead of solid or gradient colors. -->
+    <!-- background-image Attributes: -->
+        <!-- url is where you put the address of the selected image -->
+            <!-- rgba is color -->
+
+opcacity: (attribute)
+<!-- Allows the element's opacity to be modified -->
+    <!-- opacity Attribute: -->
+        <!-- decimal values only, from 0.0 to 1.0, with 1 being solid and 0 being invisible  -->
+
+
+
+
+
+<!-- Layout Modifiers -->
+
+margin: (attribute)
+<!-- Creates a margin box space between the border box and other elements -->
+    <!-- margin Attributes: -->
+        <!-- px, en, and % (definitions covered in previous notes) -->
+
+margin-(top)(bottom)(left)(right): (attribute)
+<!-- Creates a botttom, top, left, OR right margin line. Same functionallity with margin, only that it just applies to one side. -->
+
+border: (size) (style) (color);
+<!-- Creates a whole border box -->
+    <!-- border Attributes: -->
+        <!-- size Attributes: -->
+            <!-- px, en, and % (definitions already covered in previous notes) -->
+        
+        <!-- style Attributes -->
+            <!-- dotted - creates dotted border -->
+            <!-- dashed - creates dashed border -->
+            <!-- solid - creates plain solid border -->
+            <!-- double - creates double border -->
+            <!-- transparent - creates non-existent border -->
+
+        <!-- color Attributes -->
+            <!-- rgba, hex, preset color (definitions already covered in previous notes) -->
+    
+    <!-- NOTE: you need style for the border to even appear because the default setting of style is transparent -->
+        <!-- 
+            Example: 
+            
+            .test-class
+            {
+                border: 2px blue    --border will not even show up
+
+                border: solid       --a border will show up, with default border size and color
+            }
+        -->
+
+border-(top)(bottom)(left)(right): (size) (style) (color);
+<!-- One-side only variant of border -->
+
+border-radius: (attribute)
+<!-- Gives the border curvature or roundness -->
+        <!-- border-radius Attributes: -->
+            <!-- px, en, and % (definitions already covered in previous notes) -->
+            <!-- HOWEVER, based on previous experience, only use px for best results -->
+
+padding: (attribute)
+<!-- Creates a padding box space between the content box and the border box. -->
+        <!-- padding Attributes: -->
+            <!-- px, en, and % (definitions already covered in previous notes) -->
+
+padding-(top)(bottom)(left)(right)
+<!-- One-side only variant of padding -->
+
+display: (attribute)
+<!-- Modifies the display type of the element, changing it's behavior -->
+    <!-- display Attributes: -->
+        <!-- block - Converts elements into a block element -->
+        <!-- inline - Converts elements into an inline element -->
+
+<!-- 
+    NOTE: in all elements, they are all have either BLOCK properties or INLINE properties. Elements with block properties consumes the
+    very left to the very right side of the browser page line (when its width is left by default) with its margin. Due to its nature, 
+    it stacks other elements vertically (meaning you can't put elements on its side). Elements with inline properties DOES NOT consume
+    spaces like blocks, and due to this, allows horizontal stacking (by default), and goes to the next line of the page only if it ran out
+    of horizontal space. Also note that in inline blocks, they do not have height and width, and they will only have these properties based on
+    how big the content they contain. If you assigned a height and width value in an inline element, it will be ignored.
+
+    Block elements can have margins in ALL SIDES, but inline elements
+    can only be assigned with margins ON THE LEFT AND RIGHT SIDES ONLY. 
+
+    Visual representation of what's happening:
+
+    | xxxxxxxxxxxxx     ->->->->->->->->        -Notice how BLOCK goes down (vertically) while consuming the entire right side with blank
+    V xxxxxxxxxxxxx     ->->->->->->->->         spaces as their margin, represented in X.
+    | xxxxxxxxxxxxx     ->->->->->->->->    
+    V xxxxxxxxxxxxx     ->->->->->->->->        -Notice how INLINE goes left to right (horizontally), not wasting space, and only
+    (BLOCK property)    (INLINE property)        moves to the next line after reaching the end of the right side
+
+    Common block elements are div p bn , and common inline elements are imgs and spans
+
+    THERE IS ALSO A THIRD TYPE of display property, which is a hybrid of the two. "inline-block" functions much like elements with inline
+    properties, but with the added property of being able to have UPPER AND LOWER margins, like blocks. It also can now have a height and width,
+    like a block
+-->
+
+float: (attribute)
+<!-- Fixes the location of the element so it will "float" up beside with other elements -->
+<!--
+     NOTE: width must also be specified along with this element, otherwise, the browser will automatically fill the gap of the whole
+     screen, making it impossible for other elements to float up since there is no space.
+ -->
+    <!-- float Attributes -->
+        <!-- left, right - pins the element in the left or right corner of the website -->
+
+position: (attribute)
+<!-- Modifies the property of position of the element, depending on the given attribute. -->
+    <!-- position Attributes: -->
+        <!-- static - the default position behavior of elements -->
+        <!-- 
+            absolute - puts elements in an absolute top, left, right, or bottom property. Can potentially overlap other elements.
+            Position is determined by first NON-STATIC element. As long as there's no elements with RELATIVE position
+            before it, first statement applies
+        -->
+            <!-- absolute sub-properties : top OR bottom, left OR right. (Attributes are only px & %) -->
+        <!-- fixed - fixes the position of the element in the SCREEN -->
+            <!-- 
+                NOTE: the difference between absolute and fixed is that in absolute, the element is fixed in ONE SPOT OF A PAGE,
+                given its defined postition, while  fixed is fixed in ONE SPOT. PERIOD. that means even if you scroll up or down, it will
+                absolutely retain its position to the screen no matter what.
+             -->
+        <!-- 
+            relative - puts elements in an absolute top, left, right, or bottom property. Can potentially overlap other elements, similar to
+            absolute. Position is determined by first STATIC element. As long as there's no elements with STATIC position before it,
+            first statement applies. 
+        -->
+
+overflow: (attribute)
+<!-- Modifies how the website would handle overlowing elements (the size of the element that contains that element is too small) -->
+    <!-- overflow Attributes: -->
+        <!-- scroll - creates a scrollbar so elements stays inside the element and can be viewed with a scrollbar -->
+        <!-- hidden - cuts the overflowing elements so only the ones that fit inside will show up -->
+
+cursor: (attribute)
+<!-- Modifies the look of the cursor -->
+        <!-- cursor Attributes: -->
+             <!-- default - Modifies the cursor to look like the standard arrow cursor -->
+             <!-- crosshair - Modifies the cursor to look like CS:GO crosshair -->
+             <!-- pointer - Modifies the cursor to look like a finger pointing -->
+             <!-- move - Modifies the cursor to look like a cursor for moving -->
+             <!-- text - Modifies the cursor to look like a cursor for text -->
+             <!-- help - Modifies the cursor to look like a the standard arrow cursor with a question mark beside it -->
+             <!-- no-drop - Modifies the cursor to look like a stop sign -->
+             <!-- help - Modifies the cursor to look like a the standard arrow cursor with another arrow beside it -->
+             <!-- progress - Modifies the cursor to look like a the standard arrow cursor with a loading cursor beside it -->
+             <!-- wait - Modifies the cursor to look like a loading cursor -->
+             <!-- grab - Modifies the cursor to look like a hand -->
+             <!-- grabbing - Modifies the cursor to look like a fist -->
+             <!-- copy - Modifies the cursor to look like a the standard arrow cursor with a crosshair beside it -->
+             <!-- cell - Modifies the cursor to look like a cross -->
+             <!-- none - Makes the cursor disappear -->
+
+             <!-- inherit, auto, hand - all four of these I have no idea what they do but I don't think they are needed that much so -->
+             <!-- 
+                 url(address), (second parameter) - Modifies the cursor to whatever picture is specified in the address. In a case when 
+                 the url address is not available or accessible, the cursor will instead use the second parameter given
+             -->
