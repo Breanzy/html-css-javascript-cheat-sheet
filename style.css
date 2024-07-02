@@ -1,29 +1,22 @@
 /* General Styling */
-body
-{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
     background-color: #0c0c0c;
     color: white;
     font-size: large;
-
 }
 
-
-
-section
-{
+section {
     background-color: #171717;
     padding: 3%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     position: ab;
-
 }
 
-h1
-{
+h1 {
     font-size: 200%;
     font-weight: bold;
 
@@ -32,78 +25,62 @@ h1
 
     margin-top: 0%;
     padding: 1%;
-    
 }
 
-h2
-{
+h2 {
     font-size: 40px;
     border-bottom: 2px dashed white;
     margin-bottom: 6.5%;
-
 }
 
-h3
-{
-    border-bottom: .05em solid white;
+h3 {
+    border-bottom: 0.05em solid white;
 }
 
-table th
-{
+table th {
     padding: 2px;
     border: white solid 4px;
 }
 
-table td
-{
+table td {
     border: solid white 1px;
     padding: 7px;
 }
 
-span
-{
+span {
     color: blue;
     background-color: white;
-    
 }
-    
 
 /* General class styling */
-.main
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(https://i.pinimg.com/474x/c5/11/65/c511653caf710592e6f8f72f36be922d.jpg);
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+        url(https://i.pinimg.com/474x/c5/11/65/c511653caf710592e6f8f72f36be922d.jpg);
     text-align: center;
 
     margin: auto;
 
     border-bottom: solid 1px;
-
 }
-    
-.content
-{
+
+.content {
     padding: 1.5%;
     margin-left: 20%;
     margin-right: 20%;
-    
 }
 
-.image
-{
+.image {
     height: 200px;
     width: 200px;
 
     border-radius: 10px;
-    
 }
 
-.tableRow
-{
+.tableRow {
     display: table-row;
 }
 
-.tableCell
-{
+.tableCell {
     color: black;
     background: linear-gradient(40deg, green, yellow, red);
     padding: 20px;
@@ -111,63 +88,52 @@ span
     display: table-cell;
 }
 
-
 /* Example-Exclusive class styling */
 
-#textshadow
-{
+#textshadow {
     color: black;
     text-shadow: greenyellow 3px 3px, gold -3px -3px, white 0px 0px 20px;
     font: bold 30px Helvetica;
 }
 
-ul#listUL li
-{
-     display: inline;
-     border: solid rgb(165, 78, 51);
-     padding: 2px;
+ul#listUL li {
+    display: inline;
+    border: solid rgb(165, 78, 51);
+    padding: 2px;
 }
 
-ul#listUL li :hover
-{
+ul#listUL li :hover {
     background-color: rgb(255, 217, 160);
 }
 
 /* Notice how many elements are in here. This is a very specific element attribute. in ID, no space is needed. notice no space at ul#listUL */
-ul#listUL li a
-{
+ul#listUL li a {
     text-decoration: none;
     color: rgb(165, 78, 51);
 }
 
-#pseudo
-{
+#pseudo {
     border: solid white 2px;
 }
 
-#pseudo::before
-{
-    content: ' ';
+#pseudo::before {
+    content: " ";
     display: block;
     width: 10px;
     height: 10px;
     background-color: red;
-
 }
 
-#pseudo:hover::after
-{
-    content: 'balls in yo jaws';
-    color: orange;    
+#pseudo:hover::after {
+    content: "balls in yo jaws";
+    color: orange;
 }
 
-#pseudo:hover
-{
-    color: green;    
+#pseudo:hover {
+    color: green;
 }
 
-#boxes-example
-{
+#boxes-example {
     margin: 50px;
     margin-left: 30%;
     padding: 40px;
@@ -175,90 +141,78 @@ ul#listUL li a
     border: solid white 4px;
 }
 
-#border-example
-{
+#border-example {
     padding: 20px;
     border-radius: 20px;
     border-left: solid rgb(82, 212, 43);
     border-top: dashed;
     border-right: double;
-    border-bottom: dotted
+    border-bottom: dotted;
 }
 
-#background-image-example
-{
+#background-image-example {
     padding: 7%;
     border-radius: 20px;
     border: solid 2px rgb(73, 73, 73);
     background-image: url(https://wallpapercave.com/wp/wp3377140.jpg);
-
 }
 
-#block
-{
+#block {
     display: block;
 }
 
-#float
-{
+#float {
     margin-top: 3%;
     margin-left: 1%;
     float: right;
 }
 
-#absolute
-{
+#absolute {
     opacity: 0.3;
 
     position: absolute;
-    
+
     right: 430px;
 }
 
-#fixed
-{
+#fixed {
     opacity: 0.3;
     position: fixed;
 
     left: 20px;
-    top:192px;
+    top: 192px;
 
     padding: 2%;
     border-radius: 20px;
     border: solid 2px rgb(73, 73, 73);
 
-
     background-image: url(https://wallpapercave.com/wp/wp3377140.jpg);
 }
 
-#fixed:hover{ opacity: 1 }
+#fixed:hover {
+    opacity: 1;
+}
 
-#relative
-{
+#relative {
     position: relative;
 
     display: inline-block;
     right: 70px;
     top: 60px;
-
 }
 
-#overflow-1
-{
+#overflow-1 {
     height: 125px;
     overflow: scroll;
 }
 
-#overflow-2
-{
+#overflow-2 {
     height: 12px;
     width: 39px;
     overflow: hidden;
 }
 
-#sample-boxes
-{
-
+#sample-boxes {
     display: inline-block;
     margin: 1%;
     border: white solid 2px;
@@ -268,8 +222,7 @@ ul#listUL li a
     padding: 3px;
 }
 
-#special-sample-box
-{
+#special-sample-box {
     cursor: url("pogchamp.ico"), default;
     display: inline-block;
     margin: 1%;
@@ -277,11 +230,11 @@ ul#listUL li a
     color: white;
     background-color: rgb(46, 46, 46);
     border-radius: 5px;
-    padding: 3px; 
+    padding: 3px;
 }
 
-#sameStyle1, #sameStyle2
-{
+#sameStyle1,
+#sameStyle2 {
     background-color: aqua;
     color: black;
     display: inline-block;
@@ -291,9 +244,7 @@ ul#listUL li a
     vertical-align: middle;
 }
 
-#aye
-{
+#aye {
     color: blanchedalmond;
     background: blue;
 }
-
