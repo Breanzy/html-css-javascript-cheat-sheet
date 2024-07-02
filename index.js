@@ -1,7 +1,7 @@
 // Javascript Codes
 
 // ***************************************** Preface Info **************************************************
-// You can put semicolons in Javascript, in fact, it is recommended. But you can also just, well, dont.
+// You can put semicolons in Javascript, in fact, it is recommended. But you can also just, well, don't.
 
 // ***************************************** Comment **************************************************
 //This is sort of redundant, but  // is the comment function for Javascript. // Is a single line comment
