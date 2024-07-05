@@ -13,7 +13,12 @@ line Comment. */
 
 /* 
 
-undefined, null, boolean, string, symbol, number
+    undefined - undefined
+    null - blank    
+    boolean - true, false
+    string - "hey"
+    symbol - {test: "hey"}
+    number - 213
 
  */
 
@@ -59,13 +64,98 @@ function functionTest2() {
 } // you will only be adding a value to this function. creating a new object based on this function will not pass newTest value
 
 let test6 = new functionTest2(); // creating a new object functionTest2 using new keyword
+console.log(test6.__proto__); //Prototype chaining. This is like the reference of the functionTest2 constructor with all its value. It is kind of like a class.
 
-console.log(test6.test);
+const test7 = new Object(); //another way of creating a new object
 
-function functionTest() {
-    let b = "test";
+let test8 = () => "newTest"; // arrow function that basically says return "newTest"
 
-    let a = "test";
+let test9 = () => {
+    console.log("hello");
+    console.log("world");
+}; // arrow function but with curly braces / multi-lines
 
-    return 0;
+test9(); // calling the arrow function. PS arrow functions are usually used for one-line functions like for anonymous functiond
+
+class TestClass {
+    // Class function. A more common version of prototype chaining
+    constructor(value) {
+        //Constructor function
+        this.value = value;
+    }
 }
+
+setTimeout(() => {
+    console.log("hello");
+}, 500); // setTimeout is a function that waits for 500 milliseconds before executing the function.
+
+const promiseTest = new Promise((resolve, reject) => {
+    //Promise Function. This is an asynchronous function that waits for a promise to be fulfilled or rejected.
+    let promiseBool = true; //Basically, Promise is an undefined value that will be true or false in the future. For this example,
+    if (promiseBool) {
+        // promiseBool is instantly given. resolve & reject will be the value that will be returned
+        resolve("this returns true");
+    } else {
+        reject("this returns false");
+    }
+});
+
+promiseTest
+    .then((value) => {
+        // When a promise is fulfilled, you can then execute the then function, which will return the value of the fulfilled promise
+        console.log(value);
+    })
+
+    .catch((value) => {
+        // When a promise is rejected, you can instead execute the catch function which returns the value of the rejected promise
+        console.log(value);
+    })
+
+    .finally(() => {
+        // When you are already done evaluating both the rejected and fulfilled promise,
+        console.log("donezies"); // you can also execute the finally function which returns the value of the promise no matter what the value
+    });
+
+async function asyncTest() {
+    //This is an async function. Instead of using .then, . catch, and . finally, you can use await. looks easier.
+    try {
+        //try catch function for javascript. If resolved, goes to try. If rejected, throws an error message thingy
+        const resolveVal = await promiseTest; // await waits for the promise to be fulfilled or rejected. This now functions as a synchronous function.
+    } catch {
+        const rejectVal = await promiseTest;
+    }
+}
+
+let test10;
+
+const testBtn = window.document.querySelector(".button"); // Query Selector. Using the Document node, we can assign a variable with an HTML element using querySelector
+const allBtns = window.document.querySelectorAll(".button"); // Query Selector All. This selects all elements that match the selector. previous one only selects the first element seen
+
+testBtn.addEventListener("click", () => {
+    console.log("hey");
+}); // Event Listener. This is a function that listens for an event to occur. In this case, when the button is clicked, it will execute the function.
+
+import React from "react"; // import function of JS.
+import { Component, useState } from "react"; // Multiple import function of JS in same module
+
+testBtn.addEventListener("click", async () => {
+    //notice this other one has async
+    const React = await import("react"); // this is same as the import function previously, but this time, this will only load the import when you actually need to use it instead
+}); // This way of importing is called dynamic import. Uses the feature of async to just wait for the execution of import when used. pretty clever
+
+/* 
+WHY JS FRAMEWORKS EXIST
+
+JS is basically used for changing elements on the page. However, it does this in a way that you manually change a property of the element every time. Frameworks
+fix this problem by making the properties of an element behave like an input function so you can dynamically change its properties without hardcoding the property
+
+
+WHAT IS MODULE BUNDLER
+
+It bundles all js modules to a single file so the browser only has to load one file instead of multiple files.
+
+
+WHAT IS THE DIFFERENCE BETWEEN IMPORT AND REQUIRE
+import is for esm and require is for cjs. CJS is the older version and its not useful for me for now. just use import. you have backwards compatibility with CJS module anyways
+There's now a thing called Bun that tries to fix this issue of divide but at the time of writing this, it's still pretty new. Who knows what it will become tho fr fr
+*/
