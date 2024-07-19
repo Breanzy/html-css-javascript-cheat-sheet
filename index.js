@@ -158,4 +158,10 @@ It bundles all js modules to a single file so the browser only has to load one f
 WHAT IS THE DIFFERENCE BETWEEN IMPORT AND REQUIRE
 import is for esm and require is for cjs. CJS is the older version and its not useful for me for now. just use import. you have backwards compatibility with CJS module anyways
 There's now a thing called Bun that tries to fix this issue of divide but at the time of writing this, it's still pretty new. Who knows what it will become tho fr fr
+
+
+Difference between queryselector and getelementbyid: The reason is because querySelector looks through multiple elements, as a
+result it will take a little longer to get the id that you want. So, if you know you are retrieving an id then you should use getElementById
+because it only looks at id's making it faster, more efficient and effective code
+
 */
