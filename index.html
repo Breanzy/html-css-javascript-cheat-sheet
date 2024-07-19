@@ -36,7 +36,50 @@
                 </button>
             </div>
 
-        <script src="script.js"></script>
+            <!-- star wars cards -->
+            <div class="card m-6" id="project3">
+                <div class="card-image">
+                    <figure class="image is-square" alt="aye">
+                        <img id="swJpg" src="" />
+                    </figure>
+                </div>
+
+                <div class="card-content has-text-centered">
+                    <div class="media">
+                        <div class="media-content">
+                            <div id="swName" class="title"></div>
+                            <div id="swGender" class="subtitle"></div>
+                        </div>
+                    </div>
+                    <div class="is-size-5 m-2 has-text-weight-semibold">
+                        Random Opening Crawl:
+                    </div>
+                    <div id="starWarsQuote" class="content"></div>
+                </div>
+
+                <footer class="card-footer">
+                    <button
+                        class="card-footer-item button is-danger m-3 swBtn"
+                        id="swPrev"
+                    >
+                        Previous
+                    </button>
+                    <button
+                        class="card-footer-item button m-3 swBtn"
+                        id="swRand"
+                    >
+                        Random
+                    </button>
+                    <button
+                        class="card-footer-item button is-success m-3 swBtn"
+                        id="swNext"
+                    >
+                        Next
+                    </button>
+                </footer>
+            </div>
         </div>
+
+        <script src="script.js" async></script>
     </body>
 </html>

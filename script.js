@@ -34,13 +34,57 @@ counterButton.forEach((btn) => {
     });
 });
 
+// Star wars card
+let swIndex = 1;
+let swNext = document.getElementById("swNext");
+let swRand = document.getElementById("swRand");
+let swPrev = document.getElementById("swPrev");
+let swJpg = document.getElementById("swJpg");
+
+function swFetch() {
+    let starWarsRequest = "https://swapi.dev/api/people/" + swIndex + "/";
+    swJpg.src = "starwars" + swIndex + ".jpg";
+
+    fetch(starWarsRequest)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            let name = document.getElementById("swName");
+            let gender = document.getElementById("swGender");
+            name.textContent = data.name;
+            gender.textContent = "Gender: " + data.gender;
+
+            fetch(data.films[Math.floor(Math.random() * data.films.length)])
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    let quote = document.getElementById("starWarsQuote");
+                    quote.textContent = data.opening_crawl;
+                });
+        });
+
+    swPrev.disabled = swIndex <= 1 ? true : false;
+    swNext.disabled = swIndex > 8 ? true : false;
+}
+
+swFetch();
+
+const swButton = document.querySelectorAll(".swBtn");
+swButton.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        const styles = this.classList;
+        if (styles.contains("is-success")) {
+            swIndex++;
+        } else if (styles.contains("is-danger")) {
+            swIndex--;
+        } else {
+            swIndex = Math.floor(Math.random() * (8 - 1) + 1);
+        }
+        swFetch();
+    });
 });
 
-counterReset.addEventListener("click", () => {
-    counterText.textContent = 0;
-    counter = 0;
 });
 
-// Difference between queryselector and getelementbyid: The reason is because querySelector looks through multiple elements, as a
-// result it will take a little longer to get the id that you want. So, if you know you are retrieving an id then you should use getElementById
-// because it only looks at id's making it faster, more efficient and effective code
