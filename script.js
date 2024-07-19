@@ -1,16 +1,15 @@
 // color switch function
+let colors = ["blue", "red", "violet", "orange", "green"];
 
-colors = ["blue", "red", "yellow", "orange", "green"];
-
-body = document.querySelector(".colors");
-button = document.getElementById("colorButton");
+let boxColor = document.querySelector(".box");
+let body = document.querySelector(".colors");
+let button = document.getElementById("colorButton");
 
 button.addEventListener("click", () => {
     colorSelector = Math.floor(Math.random() * colors.length);
-    document.body.style.backgroundColor = colors[colorSelector];
+    boxColor.style.backgroundColor = colors[colorSelector];
     body.textContent = colors[colorSelector];
 });
-
 
 // counter function
 
