@@ -12,21 +12,28 @@ button.addEventListener("click", () => {
 });
 
 // counter function
+let counter = 0;
 
-counter = 0;
-counterText = document.getElementById("counterTxt");
-counterButtonInc = document.getElementById("counterBtnInc");
-counterButtonDec = document.getElementById("counterBtnDec");
-counterReset = document.getElementById("counterReset");
+const counterText = document.getElementById("counterTxt");
+const counterButton = document.querySelectorAll(".counterBtn");
 
-counterButtonInc.addEventListener("click", () => {
-    counterText.textContent = counter + 1;
-    counter++;
+counterButton.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        const styles = this.classList;
+        if (styles.contains("increase")) {
+            counter++;
+        } else if (styles.contains("decrease")) {
+            counter--;
+        } else {
+            counter = 0;
+        }
+
+        counterText.style.color =
+            counter > 0 ? "green" : counter == 0 ? "white" : "red";
+        counterText.textContent = counter;
+    });
 });
 
-counterButtonDec.addEventListener("click", () => {
-    counterText.textContent = counter - 1;
-    counter--;
 });
 
 counterReset.addEventListener("click", () => {
