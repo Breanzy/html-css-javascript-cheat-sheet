@@ -86,5 +86,15 @@ swButton.forEach((btn) => {
     });
 });
 
+let navBurger = document.querySelector(".navbar-burger");
+navBurger.addEventListener("click", () => {
+    const target = document.getElementById("navbarMenu");
+    navBurger.classList.toggle("is-active");
+    target.classList.toggle("is-active");
 });
 
+let navDropdown = document.querySelector(".navbar-link")
+navDropdown.addEventListener("click", function() {
+    const dropDown = document.querySelector(".navbar-dropdown")
+    dropDown.classList.toggle("is-hidden");
+});

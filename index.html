@@ -11,10 +11,52 @@
         href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css"
     />
     <body>
-        <h2 class="colors">Test</h2>
+        <nav
+            class="navbar is-dark"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="jsLogo.jpg" alt="" />
+                    <div class="is-size-4 has-text-weight-bold">
+                        Javascript Projects
+                    </div>
+                </a>
 
-        <button id="colorButton">testtsatwet</button>
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link"> <button>Projects</button> </a>
+                        <div class="navbar-dropdown is-hidden">
+                            <a href="#project1" class="navbar-item">
+                                Color Switcher
+                            </a>
+                            <a href="#project2" class="navbar-item">
+                                Counter
+                            </a>
+                            <a href="#project3" class="navbar-item">
+                                HTTP Card
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="container is-max-desktop">
             <!-- color switcher -->
