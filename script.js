@@ -36,9 +36,6 @@ counterButton.forEach((btn) => {
 
 // Star wars card
 let swIndex = 1;
-let swNext = document.getElementById("swNext");
-let swRand = document.getElementById("swRand");
-let swPrev = document.getElementById("swPrev");
 let swJpg = document.getElementById("swJpg");
 
 function swFetch() {
@@ -64,28 +61,26 @@ function swFetch() {
                     quote.textContent = data.opening_crawl;
                 });
         });
-
-    swPrev.disabled = swIndex <= 1 ? true : false;
-    swNext.disabled = swIndex > 8 ? true : false;
 }
 
 swFetch();
 
-const swButton = document.querySelectorAll(".swBtn");
-swButton.forEach((btn) => {
-    btn.addEventListener("click", function () {
-        const styles = this.classList;
-        if (styles.contains("is-success")) {
-            swIndex++;
-        } else if (styles.contains("is-danger")) {
-            swIndex--;
+//uses event delegation instead of for each loop which is apparently the most optimal way of doing things
+const swButton = document.getElementById("swBtns");
+swButton.addEventListener("click", function (e) {
+    if (e.target.matches(".button")) {
+        if (e.target.matches(".is-success")) {
+            swIndex = swIndex > 8 ? 1 : swIndex + 1;
+        } else if (e.target.matches(".is-danger")) {
+            swIndex = swIndex <= 1 ? 9 : swIndex - 1;
         } else {
             swIndex = Math.floor(Math.random() * (8 - 1) + 1);
         }
         swFetch();
-    });
+    }
 });
 
+// Navivation Bar
 let navBurger = document.querySelector(".navbar-burger");
 navBurger.addEventListener("click", () => {
     const target = document.getElementById("navbarMenu");
@@ -93,8 +88,8 @@ navBurger.addEventListener("click", () => {
     target.classList.toggle("is-active");
 });
 
-let navDropdown = document.querySelector(".navbar-link")
-navDropdown.addEventListener("click", function() {
-    const dropDown = document.querySelector(".navbar-dropdown")
+let navDropdown = document.querySelector(".navbar-link");
+navDropdown.addEventListener("click", function () {
+    const dropDown = document.querySelector(".navbar-dropdown");
     dropDown.classList.toggle("is-hidden");
 });
