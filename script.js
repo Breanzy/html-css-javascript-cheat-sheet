@@ -34,6 +34,36 @@ counterButton.forEach((btn) => {
     });
 });
 
+// countdown
+let countdownTxt = document.getElementById("cdTxt");
+let countdownBtn = document.getElementById("project3");
+let countdownTime = 0;
+
+function cdTxtState() {
+    countdownTxt.textContent = countdownTime;
+    countdownTxt.style.color = countdownTime <= 0 ? "red" : "white";
+}
+
+countdownBtn.addEventListener("click", function (e) {
+    if (e.target.matches(".button")) {
+        if (e.target.matches(".cdAdd")) {
+            const disableCdBtn = countdownBtn.querySelector(".cdStrt");
+            disableCdBtn.disabled = false;
+            countdownTime += 10;
+            cdTxtState();
+        } else {
+            e.target.disabled = true
+            let countdownInterval = setInterval(() => {
+                countdownTime--;
+                if (countdownTime <= 0) {
+                    clearInterval(countdownInterval);
+                }
+                cdTxtState();
+            }, 1000);
+        }
+    }
+});
+
 // Star wars card
 let swIndex = 1;
 let swJpg = document.getElementById("swJpg");
