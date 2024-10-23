@@ -92,7 +92,10 @@ span {
 
 #textshadow {
     color: black;
-    text-shadow: greenyellow 3px 3px, gold -3px -3px, white 0px 0px 20px;
+    text-shadow:
+        greenyellow 3px 3px,
+        gold -3px -3px,
+        white 0px 0px 20px;
     font: bold 30px Helvetica;
 }
 
@@ -125,7 +128,7 @@ ul#listUL li a {
 }
 
 #pseudo:hover::after {
-    content: "balls in yo jaws";
+    content: "Hello World!";
     color: orange;
 }
 
