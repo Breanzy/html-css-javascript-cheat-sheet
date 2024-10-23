@@ -52,7 +52,7 @@ countdownBtn.addEventListener("click", function (e) {
             countdownTime += 10;
             cdTxtState();
         } else {
-            e.target.disabled = true
+            e.target.disabled = true;
             let countdownInterval = setInterval(() => {
                 countdownTime--;
                 if (countdownTime <= 0) {
@@ -70,7 +70,7 @@ let swJpg = document.getElementById("swJpg");
 
 function swFetch() {
     let starWarsRequest = "https://swapi.dev/api/people/" + swIndex + "/";
-    swJpg.src = "starwars" + swIndex + ".jpg";
+    swJpg.src = "assets/images/starwars" + swIndex + ".jpg";
 
     fetch(starWarsRequest)
         .then((response) => {

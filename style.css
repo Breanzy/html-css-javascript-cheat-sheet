@@ -226,7 +226,7 @@ ul#listUL li a {
 }
 
 #special-sample-box {
-    cursor: url("pogchamp.ico"), default;
+    cursor: url("assets/misc/pogchamp.ico"), default;
     display: inline-block;
     margin: 1%;
     border: white solid 2px;
