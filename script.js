@@ -38,6 +38,7 @@ counterButton.forEach((btn) => {
 let countdownTxt = document.getElementById("cdTxt");
 let countdownBtn = document.getElementById("project3");
 let countdownTime = 0;
+let countdownStart = false;
 
 function cdTxtState() {
     countdownTxt.textContent = countdownTime;
@@ -45,22 +46,22 @@ function cdTxtState() {
 }
 
 countdownBtn.addEventListener("click", function (e) {
-    if (e.target.matches(".button")) {
-        if (e.target.matches(".cdAdd")) {
-            const disableCdBtn = countdownBtn.querySelector(".cdStrt");
-            disableCdBtn.disabled = false;
-            countdownTime += 10;
+    if (e.target.matches(".cdAdd")) {
+        const disableCdBtn = countdownBtn.querySelector(".cdStrt");
+        disableCdBtn.disabled = countdownStart && true;
+        countdownTime += 10;
+        cdTxtState();
+    } else if (e.target.matches(".cdStrt")) {
+        countdownStart = true;
+        e.target.disabled = true;
+        let countdownInterval = setInterval(() => {
+            countdownTime--;
+            if (countdownTime <= 0) {
+                clearInterval(countdownInterval);
+                countdownStart = false;
+            }
             cdTxtState();
-        } else {
-            e.target.disabled = true;
-            let countdownInterval = setInterval(() => {
-                countdownTime--;
-                if (countdownTime <= 0) {
-                    clearInterval(countdownInterval);
-                }
-                cdTxtState();
-            }, 1000);
-        }
+        }, 1000);
     }
 });
 
